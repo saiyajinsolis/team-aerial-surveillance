@@ -2,7 +2,7 @@ import pygame
 
 def init():
     pygame.init()
-    win = pygame.display.set_mode((400, 400))
+    win = pygame.display.set_mode((600, 400))
 
 def getKey(keyName):
     ans = False
@@ -20,6 +20,11 @@ def main():
         print("Left key pressed")
     if getKey("RIGHT"):
         print("Right key pressed")
+    if getKey("UP"):
+        print("UP key pressed")
+    if getKey("DOWN"):
+        print("DOWN key pressed")
+    
 
 
 if __name__ == '__main__':
